@@ -1,0 +1,77 @@
+@import "variables";
+
+@mixin button($color: green) {
+  height: $form-item-height;
+  min-width: 24px;
+  width: 100%;
+  padding: 3px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  border: 1px solid $border-color;
+  color: inherit;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  & i {
+    font-size: 18px;
+  }
+
+  &:active,
+  &.active {
+    color: $color;
+  }
+
+  &:hover {
+    border: 1px solid $border-color-dark;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: default;
+    background: $background-gray;
+
+    &:active,
+    &.active {
+      color: inherit;
+    }
+  }
+}
+
+@mixin input($color: green) {
+  height: $form-item-height;
+  min-width: 24px;
+  width: 100%;
+  padding: 3px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  border: 1px solid $border-color;
+  text-align: left;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+  padding: 0 10px;
+
+  & i {
+    font-size: 18px;
+  }
+
+  &:active,
+  &.active {
+    color: $color;
+  }
+
+  &:hover {
+    border: 1px solid $border-color-dark;
+    cursor: pointer;
+  }
+}
+
+
+@mixin font($font-size, $line-height, $font-weight: normal, $font-style: normal) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
