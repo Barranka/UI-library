@@ -34,7 +34,4 @@
 
 <style scoped lang="scss">
   @import "@/styles/mixins.scss";
-
-  .form {
-  }
 </style>
