@@ -10,6 +10,7 @@
     <table class="table">
       <tbody id="tbody"></tbody>
     </table>
+    <h2>Таблица2</h2>
   </div>
 </template>
 
