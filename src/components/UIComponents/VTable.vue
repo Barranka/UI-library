@@ -6,6 +6,7 @@
     <VButton @click="removeCol" :disabled="!colsCount"> Удалить col </VButton>
   </div>
   <div class="table__content">
+    <h2>Таблица</h2>
     <table class="table">
       <tbody id="tbody"></tbody>
     </table>
